@@ -5,7 +5,7 @@
 
 <p align="left">
   <a href="https://norepinephrine.tistory.com"><img src="https://img.shields.io/badge/Tistory-000000?style=flat-square&logo=tistory&logoColor=white" /></a>
-  <a href="mailto:[yoobinkim06@gmail.com]"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="mailto:yoobinkim06@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
 </p>
 
 ---
@@ -30,6 +30,6 @@
 ## 📈 The Proof of Growth
 
 <p align="left">
-  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=[[norepinephrine](https://solved.ac/profile/norepinephrine)]" height="130" alt="Baekjoon Tier" />
-  <img src="https://github-readme-stats.vercel.app/api?username=[yoobinkim541]&show_icons=true&theme=transparent&hide_border=true" height="130" alt="GitHub Stats" />
+  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=norepinephrine" height="130" alt="Baekjoon Tier" />
+  <img src="https://github-readme-stats.vercel.app/api?username=yoobinkim541&show_icons=true&theme=transparent&hide_border=true" height="130" alt="GitHub Stats" />
 </p>
