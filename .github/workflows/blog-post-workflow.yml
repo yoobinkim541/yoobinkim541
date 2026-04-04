@@ -22,4 +22,4 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           # 블로그의 RSS 피드 주소를 입력합니다.
-          feed_list: 'https://norepinephrine.tistory.com'
+          feed_list: 'https://norepinephrine.tistory.com/rss'
