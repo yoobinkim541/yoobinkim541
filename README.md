@@ -4,8 +4,8 @@
 단순히 문제를 푸는 것에 그치지 않고, CS 지식을 근거로 지속적인 리팩토링을 거치며 치열했던 문제 해결 과정을 기록으로 남기는 것을 즐깁니다.
 
 <p align="left">
-  <a href="[티스토리 링크]"><img src="https://img.shields.io/badge/Tistory-000000?style=flat-square&logo=tistory&logoColor=white" /></a>
-  <a href="mailto:[이메일]"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="[https://norepinephrine.tistory.com]"><img src="https://img.shields.io/badge/Tistory-000000?style=flat-square&logo=tistory&logoColor=white" /></a>
+  <a href="mailto:[yoobinkim06@gmail.com]"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
 </p>
 
 ---
