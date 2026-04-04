@@ -1,15 +1,9 @@
-name: Latest blog post workflow
+name: Latest Blog Posts
 on:
   schedule:
-    # 매일 자정(UTC)에 워크플로우를 실행합니다.
-    # 리눅스 cron 문법과 동일하며, '0 0 * * *'는 매일 00:00 UTC를 의미합니다.
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-    # GitHub Actions 페이지에서 수동으로 실행할 수 있게 합니다.
-
-# 워크플로우가 README 파일을 수정할 수 있도록 권한을 부여합니다.
-permissions:
-  contents: write
+    # 1시간마다 자동으로 업데이트 (UTC 기준)
+    - cron: '0 * * * *'
+  workflow_dispatch: # 수동으로도 실행 가능하게 함
 
 jobs:
   update-readme-with-blog:
@@ -18,8 +12,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Pull in blog posts
+      - name: Pull in tistory posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          # 블로그의 RSS 피드 주소를 입력합니다.
-          feed_list: 'https://norepinephrine.tistory.com/rss'
+          # 티스토리 RSS 주소 (정상 확인됨)
+          feed_list: "https://norepinephrine.tistory.com/rss"
+          # 406 에러 해결을 위한 User-Agent 설정
+          user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          # 최대 몇 개의 글을 가져올지 설정
+          max_post_count: 5
