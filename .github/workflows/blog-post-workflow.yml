@@ -13,49 +13,51 @@ jobs:
 
       - name: Fetch RSS and Update README
         run: |
-          # 1. 티스토리 RSS를 브라우저인 척 위장하여 가져오기
+          # 1. 티스토리 RSS 가져오기 (브라우저 위장)
           curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
                "https://norepinephrine.tistory.com/rss" -o feed.xml
           
-          # 2. XML에서 제목과 링크 추출 (최신 5개)
-          # 파이썬을 활용해 안전하게 파싱합니다.
+          # 2. 파이썬으로 README 업데이트
           python3 -c "
           import xml.etree.ElementTree as ET
           import re
-          import os
 
           try:
-              # 1. RSS 피드 파싱 (최신 5개 추출)
+              # RSS 파싱 (최신 5개)
               tree = ET.parse('feed.xml')
               root = tree.getroot()
               items = root.findall('.//item')[:5]
               
               new_content = '\n'
               for item in items:
-                  title = item.find('title').text
-                  link = item.find('link').text
-                  # 가독성을 위해 불필요한 공백 제거 및 포맷팅
-                  new_content += f'- <a href=\"{link.strip()}\" target=\"_blank\">{title.strip()}</a><br>\n'
+                  title = item.find('title').text.strip()
+                  link = item.find('link').text.strip()
+                  new_content += f'- <a href=\"{link}\" target=\"_blank\">{title}</a><br>\n'
               new_content += '\n'
               
-              # 2. README.md 읽기
               with open('README.md', 'r', encoding='utf-8') as f:
                   readme = f.read()
               
-              # 3. 정규표현식으로 주석 사이 내용 '완전히' 교체
-              # 기존에 무엇이 들어있든 상관없이 START와 END 사이를 new_content로 치환합니다.
+              # 🚨 태그를 정확하게 지정합니다.
               start_tag = ''
               end_tag = ''
-              pattern = re.compile(f'{re.escape(start_tag)}.*?{re.escape(end_tag)}', re.DOTALL)
               
-              if re.search(pattern, readme):
-                  updated_readme = pattern.sub(f'{start_tag}{new_content}{end_tag}', readme)
+              # 정규표현식으로 태그 사이 내용을 통째로 갈아끼웁니다.
+              pattern = f'{re.escape(start_tag)}.*?{re.escape(end_tag)}'
+              if re.search(pattern, readme, re.DOTALL):
+                  updated_readme = re.sub(pattern, f'{start_tag}{new_content}{end_tag}', readme, flags=re.DOTALL)
                   with open('README.md', 'w', encoding='utf-8') as f:
                       f.write(updated_readme)
-                  print('Successfully updated README.md with top 5 posts.')
+                  print('Successfully updated README.md')
               else:
-                  print('Error: Could not find feed tags in README.md')
-                  
+                  print('Error: README.md에서 태그를 찾을 수 없습니다.')
           except Exception as e:
-              print(f'Error occurred: {e}')
+              print(f'Error: {e}')
           "
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update latest blog posts" && git push)
