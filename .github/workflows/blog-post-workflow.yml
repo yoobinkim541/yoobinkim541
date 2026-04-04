@@ -1,4 +1,25 @@
-python3 -c "
+name: Latest Blog Posts
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme-with-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch RSS and Update README
+        run: |
+          # 1. 티스토리 RSS를 브라우저인 척 위장하여 가져오기
+          curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+               "https://norepinephrine.tistory.com/rss" -o feed.xml
+          
+          # 2. XML에서 제목과 링크 추출 (최신 5개)
+          # 파이썬을 활용해 안전하게 파싱합니다.
+         python3 -c "
           import xml.etree.ElementTree as ET
           import re
           import os
