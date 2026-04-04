@@ -4,6 +4,10 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+# 🚨 중요: 레포지토리에 글을 쓸 수 있는 권한을 명시적으로 허용합니다.
+permissions:
+  contents: write
+
 jobs:
   update-readme-with-blog:
     runs-on: ubuntu-latest
@@ -13,51 +17,66 @@ jobs:
 
       - name: Fetch RSS and Update README
         run: |
-          # 1. 티스토리 RSS 가져오기 (브라우저 위장)
+          # 1. RSS 가져오기
           curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
                "https://norepinephrine.tistory.com/rss" -o feed.xml
           
-          # 2. 파이썬으로 README 업데이트
-          python3 -c "
+          # 2. 파이썬 스크립트 실행 (들여쓰기 오류 방지를 위해 EOF 방식 사용)
+          python3 - << 'EOF'
           import xml.etree.ElementTree as ET
           import re
+          import os
+          import sys
 
           try:
-              # RSS 파싱 (최신 5개)
+              if not os.path.exists('feed.xml'):
+                  print("Error: feed.xml 파일이 생성되지 않았습니다.")
+                  sys.exit(1)
+
               tree = ET.parse('feed.xml')
               root = tree.getroot()
               items = root.findall('.//item')[:5]
               
+              if not items:
+                  print("Warning: RSS에서 글을 찾지 못했습니다.")
+                  sys.exit(0)
+
               new_content = '\n'
               for item in items:
                   title = item.find('title').text.strip()
                   link = item.find('link').text.strip()
-                  new_content += f'- <a href=\"{link}\" target=\"_blank\">{title}</a><br>\n'
+                  new_content += f'- <a href="{link}" target="_blank">{title}</a><br>\n'
               new_content += '\n'
               
               with open('README.md', 'r', encoding='utf-8') as f:
                   readme = f.read()
               
-              # 🚨 태그를 정확하게 지정합니다.
               start_tag = ''
               end_tag = ''
               
-              # 정규표현식으로 태그 사이 내용을 통째로 갈아끼웁니다.
-              pattern = f'{re.escape(start_tag)}.*?{re.escape(end_tag)}'
+              pattern = f"{re.escape(start_tag)}.*?{re.escape(end_tag)}"
               if re.search(pattern, readme, re.DOTALL):
-                  updated_readme = re.sub(pattern, f'{start_tag}{new_content}{end_tag}', readme, flags=re.DOTALL)
+                  updated_readme = re.sub(pattern, f"{start_tag}{new_content}{end_tag}", readme, flags=re.DOTALL)
                   with open('README.md', 'w', encoding='utf-8') as f:
                       f.write(updated_readme)
-                  print('Successfully updated README.md')
+                  print("Successfully updated README.md")
               else:
-                  print('Error: README.md에서 태그를 찾을 수 없습니다.')
+                  print("Error: README.md에서 태그를 찾을 수 없습니다.")
+                  sys.exit(1)
           except Exception as e:
-              print(f'Error: {e}')
-          "
+              print(f"Python Error: {e}")
+              sys.exit(1)
+          EOF
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update latest blog posts" && git push)
+          # 변경사항이 있을 때만 커밋하고 푸시합니다.
+          if ! git diff --quiet --staged; then
+            git commit -m "Update latest blog posts"
+            git push
+          else
+            print "No changes to commit"
+          fi
