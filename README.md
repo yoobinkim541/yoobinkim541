@@ -33,6 +33,8 @@
         <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white">
         <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white">
     </div>
+  <!-- 사용한 언어 순위 카드 -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoobinkim541&layout=compact&theme=algolia)
 
 ---
 
