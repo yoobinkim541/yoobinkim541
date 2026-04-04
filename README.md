@@ -33,9 +33,6 @@
         <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white">
         <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white">
     </div>
-    <!-- GitHub Stats Card -->
-[![yoobin's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoobinkim541&show_icons=true&theme=tokyonight)](https://github.com/yoobinkim541/github-readme-stats)
-
 
 ---
 
