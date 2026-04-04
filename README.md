@@ -13,7 +13,7 @@
 ## 🛠 Engineering Philosophy
 
 * **Continuous Refactoring:** 코드는 완성되는 것이 아니라 개선되는 것이라 믿습니다. 유한한 제약 속에서 최적의 논리를 찾아냅니다.
-* **Record to Grow:** 휘발되는 고민을 붙잡기 위해 기록합니다. 어떻게(How) 구현했는가보다, 왜(Why) 이 방식을 선택했는지에 대한 근거를 남깁니다.
+* **Record to Grow:** 휘발되는 고민을 붙잡기 위해 기록합니다. 어떻게 구현했는가보다, 왜 이 방식을 선택했는지에 대한 근거를 남깁니다.
 
 ---
 
@@ -30,6 +30,6 @@
 ## 📈 The Proof of Growth
 
 <p align="left">
-  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=[norepinephrine]" height="130" alt="Baekjoon Tier" />
+  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=[[norepinephrine](https://solved.ac/profile/norepinephrine)]" height="130" alt="Baekjoon Tier" />
   <img src="https://github-readme-stats.vercel.app/api?username=[yoobinkim541]&show_icons=true&theme=transparent&hide_border=true" height="130" alt="GitHub Stats" />
 </p>
