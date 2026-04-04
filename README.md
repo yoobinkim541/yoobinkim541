@@ -41,3 +41,7 @@
 <p align="left">
   <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=norepinephrine" height="130" alt="Baekjoon Tier" />
 <img src="https://streak-stats.demolab.com?user=yoobinkim541&theme=transparent&hide_border=true" height="130" alt="GitHub Streak" />
+
+<!-- BLOG-POST-LIST:START -->
+<!-- 이 주석 사이에 최신 글 목록이 자동으로 추가됩니다. -->
+<!-- BLOG-POST-LIST:END -->
