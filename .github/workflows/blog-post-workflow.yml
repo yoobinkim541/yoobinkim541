@@ -1,23 +1,18 @@
 name: Latest Blog Posts
 on:
   schedule:
-    # 1시간마다 자동으로 업데이트 (UTC 기준)
-    - cron: '0 * * * *'
-  workflow_dispatch: # 수동으로도 실행 가능하게 함
+    - cron: '0 * * * *' # 매 시간 0분에 실행
+  workflow_dispatch:
 
 jobs:
   update-readme-with-blog:
-    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Pull in tistory posts
-        uses: gautamkrishnar/blog-post-workflow@v1
+      - uses: actions/checkout@v4
+      - uses: sarisia/actions-readme-feed@v1
         with:
-          # 티스토리 RSS 주소 (정상 확인됨)
-          feed_list: "https://norepinephrine.tistory.com/rss"
-          # 406 에러 해결을 위한 User-Agent 설정
-          user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-          # 최대 몇 개의 글을 가져올지 설정
-          max_post_count: 5
+          url: "https://norepinephrine.tistory.com/rss"
+          file: "README.md"
+          # 티스토리 보안 우회를 위한 필수 설정
+          format: "- <a href='${url}' target='_blank'>${title}</a> (${date})"
+          timezone: "Asia/Seoul"
