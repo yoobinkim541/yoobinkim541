@@ -19,7 +19,7 @@ jobs:
           
           # 2. XML에서 제목과 링크 추출 (최신 5개)
           # 파이썬을 활용해 안전하게 파싱합니다.
-         python3 -c "
+          python3 -c "
           import xml.etree.ElementTree as ET
           import re
           import os
