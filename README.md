@@ -39,5 +39,4 @@
 ## 📈 The Proof of Growth
 
 <p align="left">
-  <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=norepinephrine" height="130" alt="Baekjoon Tier" />
 <img src="https://streak-stats.demolab.com?user=yoobinkim541&theme=transparent&hide_border=true" height="130" alt="GitHub Streak" />
