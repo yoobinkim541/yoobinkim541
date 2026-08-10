@@ -11,6 +11,9 @@
 </p>
 
 ---
+## Interest in Physical AI, Robotics & Embedded Software 
+
+---
 
 ## 🛠 Engineering Philosophy
 
