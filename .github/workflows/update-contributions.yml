@@ -1,0 +1,36 @@
+name: Update contributions
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Update GitHub profile README
+        run: node scripts/update-contributions.mjs README.md
+      - name: Commit
+        run: |
+          git config user.name "contrib-bot"
+          git config user.email "contrib-bot@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || (git commit -m "chore: update open source contributions" && git push)
+      - name: Update GitLab profile README
+        if: env.GITLAB_TOKEN != ''
+        run: |
+          git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/yoobinkim541/yoobinkim541.git" /tmp/gl
+          node scripts/update-contributions.mjs /tmp/gl/README.md
+          cd /tmp/gl
+          git config user.name "contrib-bot"
+          git config user.email "contrib-bot@users.noreply.gitlab.com"
+          git add README.md
+          git diff --cached --quiet || (git commit -m "chore: update open source contributions" && git push)
