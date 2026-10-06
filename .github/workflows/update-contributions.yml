@@ -28,6 +28,7 @@ jobs:
         if: env.GITLAB_TOKEN != ''
         run: |
           git clone "https://oauth2:${GITLAB_TOKEN}@gitlab.com/yoobinkim541/yoobinkim541.git" /tmp/gl
+          grep -q 'CONTRIBUTIONS:START' /tmp/gl/README.md 2>/dev/null || cp templates/gitlab-README.md /tmp/gl/README.md
           node scripts/update-contributions.mjs /tmp/gl/README.md
           cd /tmp/gl
           git config user.name "contrib-bot"
