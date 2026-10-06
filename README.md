@@ -20,14 +20,23 @@
 GitLab · GitHub 에서 병합된 기여가 **자동으로** 이 목록에 반영됩니다.
 
 <!-- CONTRIBUTIONS:START -->
-**2** 개 오픈소스 프로젝트 · **3** 건 병합
+<p align="center">
+  <img src="https://img.shields.io/badge/Projects-2-8A63D2?style=for-the-badge" alt="projects" />
+  <img src="https://img.shields.io/badge/Merged-3-2EA043?style=for-the-badge" alt="merged" />
+  <img src="https://img.shields.io/badge/GitLab-1-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
+  <img src="https://img.shields.io/badge/GitHub-2-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</p>
 
-| 프로젝트 | ⭐ | 병합된 기여 |
-|---|---:|---|
-| ![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white) [**CalcProgrammer1/OpenRGB**](https://gitlab.com/CalcProgrammer1/OpenRGB) | 3.5k | [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) <sub>!3705 · 2026-10-05</sub> |
-| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) [**FMsongX2/laya-graph-harness**](https://github.com/FMsongX2/laya-graph-harness) | 1 | [Add Windows + NVIDIA CUDA support, one-command installers and Docker deployment](https://github.com/FMsongX2/laya-graph-harness/pull/1) <sub>#1 · 2026-10-03</sub><br>[Add a read-only Obsidian export of approved assertions](https://github.com/FMsongX2/laya-graph-harness/pull/2) <sub>#2 · 2026-10-03</sub> |
+#### <img src="https://cdn.simpleicons.org/gitlab/FC6D26" height="18" align="top" /> [CalcProgrammer1/OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-3.5k-F2C94C?style=flat-square" align="top" />
 
-<sub>마지막 갱신: 2026-10-06 (자동 갱신)</sub>
+- 🟣 **Merged** · [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) &nbsp;<sub>`!3705` · 2026-10-05</sub>
+
+#### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [FMsongX2/laya-graph-harness](https://github.com/FMsongX2/laya-graph-harness) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-1-F2C94C?style=flat-square" align="top" />
+
+- 🟣 **Merged** · [Add Windows + NVIDIA CUDA support, one-command installers and Docker deployment](https://github.com/FMsongX2/laya-graph-harness/pull/1) &nbsp;<sub>`#1` · 2026-10-03</sub>
+- 🟣 **Merged** · [Add a read-only Obsidian export of approved assertions](https://github.com/FMsongX2/laya-graph-harness/pull/2) &nbsp;<sub>`#2` · 2026-10-03</sub>
+
+<p align="right"><sub>🤖 2026-10-06 자동 갱신 · GitLab + GitHub</sub></p>
 <!-- CONTRIBUTIONS:END -->
 
 ---

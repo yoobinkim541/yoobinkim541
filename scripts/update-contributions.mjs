@@ -57,26 +57,37 @@ for (const i of items) {
 }
 
 const star = (n) => (n >= 1000 ? `${(n / 1000).toFixed(1)}k` : `${n}`);
-const badge = (host) =>
-  host === "GitLab"
-    ? "![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white)"
-    : "![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)";
+const shield = (label, msg, color, logo) =>
+  `https://img.shields.io/badge/${encodeURIComponent(label)}-${encodeURIComponent(msg)}-${color}?style=for-the-badge${logo ? `&logo=${logo}&logoColor=white` : ""}`;
+const HOST = {
+  GitLab: { color: "FC6D26", logo: "gitlab" },
+  GitHub: { color: "181717", logo: "github" },
+};
+const esc = (t) => t.replace(/[[\]|]/g, (c) => `\\${c}`);
+const count = (host) => items.filter((i) => i.host === host).length;
+const NL = "\n";
 
-let md = `${START}\n`;
+let md = `${START}${NL}`;
 if (!items.length) {
-  md += "_아직 병합된 기여가 없습니다. 곧 채워질 예정입니다!_\n";
+  md += `_아직 병합된 기여가 없습니다. 곧 채워질 예정입니다!_${NL}`;
 } else {
-  md += `**${byRepo.size}** 개 오픈소스 프로젝트 · **${items.length}** 건 병합\n\n`;
-  md += "| 프로젝트 | ⭐ | 병합된 기여 |\n|---|---:|---|\n";
+  md += `<p align="center">${NL}`;
+  md += `  <img src="${shield("Projects", byRepo.size, "8A63D2")}" alt="projects" />${NL}`;
+  md += `  <img src="${shield("Merged", items.length, "2EA043")}" alt="merged" />${NL}`;
+  for (const h of ["GitLab", "GitHub"])
+    if (count(h)) md += `  <img src="${shield(h, count(h), HOST[h].color, HOST[h].logo)}" alt="${h}" />${NL}`;
+  md += `</p>${NL}${NL}`;
   for (const list of byRepo.values()) {
     const f = list[0];
-    const prs = list
-      .map((i) => `[${i.title.replace(/\|/g, "\\|")}](${i.link}) <sub>${i.ref} · ${i.date.slice(0, 10)}</sub>`)
-      .join("<br>");
-    md += `| ${badge(f.host)} [**${f.repo}**](${f.url}) | ${star(f.stars)} | ${prs} |\n`;
+    const h = HOST[f.host];
+    const iconColor = h.color === "181717" ? "8b949e" : h.color;
+    md += `#### <img src="https://cdn.simpleicons.org/${h.logo}/${iconColor}" height="18" align="top" /> [${f.repo}](${f.url}) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-${star(f.stars)}-F2C94C?style=flat-square" align="top" />${NL}${NL}`;
+    for (const i of list)
+      md += `- 🟣 **Merged** · [${esc(i.title)}](${i.link}) &nbsp;<sub>\`${i.ref}\` · ${i.date.slice(0, 10)}</sub>${NL}`;
+    md += NL;
   }
 }
-md += `\n<sub>마지막 갱신: ${new Date().toISOString().slice(0, 10)} (자동 갱신)</sub>\n${END}`;
+md += `<p align="right"><sub>🤖 ${new Date().toISOString().slice(0, 10)} 자동 갱신 · GitLab + GitHub</sub></p>${NL}${END}`;
 
 const path = process.argv[2];
 const src = readFileSync(path, "utf8");
