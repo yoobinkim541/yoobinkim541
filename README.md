@@ -40,7 +40,7 @@ GitLab · GitHub 에서 병합된 기여가 **자동으로** 이 목록에 반�
 - 🟣 **Merged** · [Add Windows + NVIDIA CUDA support, one-command installers and Docker deployment](https://github.com/FMsongX2/laya-graph-harness/pull/1) &nbsp;<sub>`#1` · 2026-10-03</sub>
 - 🟣 **Merged** · [Add a read-only Obsidian export of approved assertions](https://github.com/FMsongX2/laya-graph-harness/pull/2) &nbsp;<sub>`#2` · 2026-10-03</sub>
 
-<p align="right"><sub>🤖 2026-10-08 자동 갱신 · GitLab + GitHub</sub></p>
+<p align="right"><sub>🤖 2026-10-09 자동 갱신 · GitLab + GitHub</sub></p>
 <!-- CONTRIBUTIONS:END -->
 
 ---
