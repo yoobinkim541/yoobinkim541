@@ -21,11 +21,26 @@ GitLab · GitHub 에서 병합된 기여가 **자동으로** 이 목록에 반�
 
 <!-- CONTRIBUTIONS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Projects-3-8A63D2?style=for-the-badge" alt="projects" />
-  <img src="https://img.shields.io/badge/Merged-4-2EA043?style=for-the-badge" alt="merged" />
+  <img src="https://img.shields.io/badge/Projects-4-8A63D2?style=for-the-badge" alt="projects" />
+  <img src="https://img.shields.io/badge/Merged-16-2EA043?style=for-the-badge" alt="merged" />
   <img src="https://img.shields.io/badge/GitLab-1-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
-  <img src="https://img.shields.io/badge/GitHub-3-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/GitHub-15-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
+
+#### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [FMsongX2/YuiYumi](https://github.com/FMsongX2/YuiYumi) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-0-F2C94C?style=flat-square" align="top" />
+
+- 🟣 **Merged** · [Download the desktop app from the latest GitHub release on the landing page](https://github.com/FMsongX2/YuiYumi/pull/12) &nbsp;<sub>`#12` · 2026-10-24</sub>
+- 🟣 **Merged** · [Windows에서 데스크톱 앱 빌드·실행 가능하게 수정](https://github.com/FMsongX2/YuiYumi/pull/11) &nbsp;<sub>`#11` · 2026-10-24</sub>
+- 🟣 **Merged** · [Open the app with the character of the landing page the visitor came from](https://github.com/FMsongX2/YuiYumi/pull/9) &nbsp;<sub>`#9` · 2026-10-24</sub>
+- 🟣 **Merged** · [Settings home in the landing page look: Yui and Yumi hero, SD menu cards](https://github.com/FMsongX2/YuiYumi/pull/10) &nbsp;<sub>`#10` · 2026-10-24</sub>
+- 🟣 **Merged** · [Landing: new share image, canvas sync, web app link, privacy page, app install](https://github.com/FMsongX2/YuiYumi/pull/8) &nbsp;<sub>`#8` · 2026-10-24</sub>
+- 🟣 **Merged** · [Keep the landing URL clean when jumping to sections](https://github.com/FMsongX2/YuiYumi/pull/7) &nbsp;<sub>`#7` · 2026-10-24</sub>
+- 🟣 **Merged** · [Sync landing with the canvas and fade into the web app](https://github.com/FMsongX2/YuiYumi/pull/6) &nbsp;<sub>`#6` · 2026-10-24</sub>
+- 🟣 **Merged** · [Rebuild the landing page from the Claude Design canvas](https://github.com/FMsongX2/YuiYumi/pull/5) &nbsp;<sub>`#5` · 2026-10-24</sub>
+- 🟣 **Merged** · [Landing: Yui & Yumi duo hero, red/pink palette](https://github.com/FMsongX2/YuiYumi/pull/4) &nbsp;<sub>`#4` · 2026-10-24</sub>
+- 🟣 **Merged** · [Add YuiYumi landing page (static, JA/KO/ZH-Hant/ZH-Hans)](https://github.com/FMsongX2/YuiYumi/pull/3) &nbsp;<sub>`#3` · 2026-10-24</sub>
+- 🟣 **Merged** · [Plan v0.3+: web-only on AIRI, model routing, user stories and flow](https://github.com/FMsongX2/YuiYumi/pull/2) &nbsp;<sub>`#2` · 2026-10-24</sub>
+- 🟣 **Merged** · [Add planning docs: spec, voice pipeline, connectors](https://github.com/FMsongX2/YuiYumi/pull/1) &nbsp;<sub>`#1` · 2026-10-24</sub>
 
 #### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [NL-Hackerton/KOBC-AX-Idea-Contest](https://github.com/NL-Hackerton/KOBC-AX-Idea-Contest) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-0-F2C94C?style=flat-square" align="top" />
 
