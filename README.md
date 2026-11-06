@@ -21,11 +21,17 @@ GitLab · GitHub 에서 병합된 기여가 **자동으로** 이 목록에 반�
 
 <!-- CONTRIBUTIONS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Projects-3-8A63D2?style=for-the-badge" alt="projects" />
-  <img src="https://img.shields.io/badge/Merged-5-2EA043?style=for-the-badge" alt="merged" />
+  <img src="https://img.shields.io/badge/Projects-4-8A63D2?style=for-the-badge" alt="projects" />
+  <img src="https://img.shields.io/badge/Merged-8-2EA043?style=for-the-badge" alt="merged" />
   <img src="https://img.shields.io/badge/GitLab-1-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
-  <img src="https://img.shields.io/badge/GitHub-4-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/GitHub-7-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
+
+#### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [NL-Hackerton/Hyundai-Car-App-Challenge-2026](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-0-F2C94C?style=flat-square" align="top" />
+
+- 🟣 **Merged** · [Record that the contest repository is now public](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026/pull/3) &nbsp;<sub>`#3` · 2026-11-06</sub>
+- 🟣 **Merged** · [Stay-or-Go submission checklist; probe import blocked](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026/pull/2) &nbsp;<sub>`#2` · 2026-11-06</sub>
+- 🟣 **Merged** · [개정: 문별 하차 준비 시나리오·설정 부담 (원본 미변경)](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026/pull/1) &nbsp;<sub>`#1` · 2026-11-06</sub>
 
 #### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [NL-Hackerton/KOBC-AX-Idea-Contest](https://github.com/NL-Hackerton/KOBC-AX-Idea-Contest) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-0-F2C94C?style=flat-square" align="top" />
 
