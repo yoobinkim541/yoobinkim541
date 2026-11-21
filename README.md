@@ -19,7 +19,7 @@
 
 <img src="./assets/robot-arm.svg" alt="2링크 로봇 팔이 무한대 곡선을 따라 그리는 애니메이션" width="193" align="right" />
 
-- Physical AI & Robotics (`ROS 2`, robot-arm control, `RViz` simulation)
+- Physical AI & Robotics (`ROS 2`, robot-arm control, `RViz`, `Isaac Sim & Lab` simulation)
 - Embedded Software & Hardware Control (`OpenRGB` device support)
 - Computer Vision (`OpenCV`)
 - LLM Agents & Developer Tooling (`MCP` servers, coding-agent harnesses)
@@ -49,11 +49,6 @@ GitLab · GitHub 에서 ★100 이상 프로젝트에 병합된 기여가 **자�
 
 <p align="right"><sub>🤖 2026-11-21 자동 갱신 · GitLab + GitHub</sub></p>
 <!-- CONTRIBUTIONS:END -->
-
-## Engineering Philosophy
-
-* **Continuous Refactoring:** "코드는 완성되는 것이 아니라 개선되는 것이라 믿습니다. 유한한 제약 속에서 최적의 논리를 찾아냅니다."
-* **Record to Grow:** "휘발되는 고민을 붙잡기 위해 기록합니다. 어떻게 구현했는가보다, 왜 이 방식을 선택했는지에 대한 근거를 남깁니다."
 
 ## The Proof of Growth
 
