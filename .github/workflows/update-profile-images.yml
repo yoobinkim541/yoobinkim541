@@ -7,6 +7,7 @@ on:
     paths:
       - config/profile-3d.json
       - scripts/update-languages.mjs
+      - scripts/recolor-3d-pie.mjs
       - .github/workflows/update-profile-images.yml
 permissions:
   contents: write
@@ -16,16 +17,18 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: config/profile-3d.json
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
+      - name: Blue language pie
+        run: node scripts/recolor-3d-pie.mjs profile-3d-contrib/profile-blue.svg
       - name: Languages card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
