@@ -17,35 +17,18 @@
 
 ## 🌍 Open Source Contributions
 
-GitLab · GitHub 에서 병합된 기여가 **자동으로** 이 목록에 반영됩니다.
+GitLab · GitHub 에서 ★100 이상 프로젝트에 병합된 기여가 **자동으로** 이 목록에 반영됩니다.
 
 <!-- CONTRIBUTIONS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Projects-4-8A63D2?style=for-the-badge" alt="projects" />
-  <img src="https://img.shields.io/badge/Merged-8-2EA043?style=for-the-badge" alt="merged" />
+  <img src="https://img.shields.io/badge/Projects-1-8A63D2?style=for-the-badge" alt="projects" />
+  <img src="https://img.shields.io/badge/Merged-1-2EA043?style=for-the-badge" alt="merged" />
   <img src="https://img.shields.io/badge/GitLab-1-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
-  <img src="https://img.shields.io/badge/GitHub-7-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
-
-#### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [NL-Hackerton/Hyundai-Car-App-Challenge-2026](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-0-F2C94C?style=flat-square" align="top" />
-
-- 🟣 **Merged** · [Record that the contest repository is now public](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026/pull/3) &nbsp;<sub>`#3` · 2026-11-06</sub>
-- 🟣 **Merged** · [Stay-or-Go submission checklist; probe import blocked](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026/pull/2) &nbsp;<sub>`#2` · 2026-11-06</sub>
-- 🟣 **Merged** · [개정: 문별 하차 준비 시나리오·설정 부담 (원본 미변경)](https://github.com/NL-Hackerton/Hyundai-Car-App-Challenge-2026/pull/1) &nbsp;<sub>`#1` · 2026-11-06</sub>
-
-#### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [NL-Hackerton/KOBC-AX-Idea-Contest](https://github.com/NL-Hackerton/KOBC-AX-Idea-Contest) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-0-F2C94C?style=flat-square" align="top" />
-
-- 🟣 **Merged** · [Cursor/kjit figma UI 6df7](https://github.com/NL-Hackerton/KOBC-AX-Idea-Contest/pull/2) &nbsp;<sub>`#2` · 2026-10-29</sub>
-- 🟣 **Merged** · [아이디어 기획서(붙임2) 초안과 공식 양식 HWPX](https://github.com/NL-Hackerton/KOBC-AX-Idea-Contest/pull/1) &nbsp;<sub>`#1` · 2026-10-08</sub>
 
 #### <img src="https://cdn.simpleicons.org/gitlab/FC6D26" height="18" align="top" /> [CalcProgrammer1/OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-3.5k-F2C94C?style=flat-square" align="top" />
 
 - 🟣 **Merged** · [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) &nbsp;<sub>`!3705` · 2026-10-05</sub>
-
-#### <img src="https://cdn.simpleicons.org/github/8b949e" height="18" align="top" /> [FMsongX2/laya-graph-harness](https://github.com/FMsongX2/laya-graph-harness) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-1-F2C94C?style=flat-square" align="top" />
-
-- 🟣 **Merged** · [Add Windows + NVIDIA CUDA support, one-command installers and Docker deployment](https://github.com/FMsongX2/laya-graph-harness/pull/1) &nbsp;<sub>`#1` · 2026-10-03</sub>
-- 🟣 **Merged** · [Add a read-only Obsidian export of approved assertions](https://github.com/FMsongX2/laya-graph-harness/pull/2) &nbsp;<sub>`#2` · 2026-10-03</sub>
 
 <p align="right"><sub>🤖 2026-11-21 자동 갱신 · GitLab + GitHub</sub></p>
 <!-- CONTRIBUTIONS:END -->

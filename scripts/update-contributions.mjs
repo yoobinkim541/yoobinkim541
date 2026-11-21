@@ -1,10 +1,12 @@
 // Usage: node update-contributions.mjs <README path>
 // Fetches merged MRs (GitLab) and merged PRs (GitHub) made to projects the user
-// does not own, and rewrites the block between the CONTRIBUTIONS markers.
+// does not own and that have at least MIN_STARS stars, and rewrites the block
+// between the CONTRIBUTIONS markers.
 import { readFileSync, writeFileSync } from "node:fs";
 
 const GITLAB_USER = process.env.GITLAB_USER ?? "yoobinkim541";
 const GITHUB_USER = process.env.GITHUB_USER ?? "yoobinkim541";
+const MIN_STARS = Number(process.env.MIN_STARS ?? 100);
 const START = "<!-- CONTRIBUTIONS:START -->";
 const END = "<!-- CONTRIBUTIONS:END -->";
 
@@ -49,7 +51,9 @@ async function github() {
   return out;
 }
 
-const items = [...(await gitlab()), ...(await github())].sort((a, b) => b.date.localeCompare(a.date));
+const items = [...(await gitlab()), ...(await github())]
+  .filter((i) => i.stars >= MIN_STARS)
+  .sort((a, b) => b.date.localeCompare(a.date));
 const byRepo = new Map();
 for (const i of items) {
   const key = `${i.host}:${i.repo}`;
@@ -69,7 +73,7 @@ const NL = "\n";
 
 let md = `${START}${NL}`;
 if (!items.length) {
-  md += `_아직 병합된 기여가 없습니다. 곧 채워질 예정입니다!_${NL}`;
+  md += `_아직 ★${MIN_STARS} 이상 프로젝트에 병합된 기여가 없습니다. 곧 채워질 예정입니다!_${NL}`;
 } else {
   md += `<p align="center">${NL}`;
   md += `  <img src="${shield("Projects", byRepo.size, "8A63D2")}" alt="projects" />${NL}`;
