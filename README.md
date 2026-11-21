@@ -1,66 +1,66 @@
-# 💡 Today's Me Differs From Yesterday's Me
-
-안녕하세요, **어제의 코드에 머물지 않고 매일 진화하는 개발자 김유빈**입니다.  
-단순히 문제를 푸는 것에 그치지 않고, CS 지식을 근거로 지속적인 리팩토링을 거치며 치열했던 문제 해결 과정을 기록으로 남기는 것을 즐깁니다.
-
-<p align="left">
-  <a href="https://www.notion.so/Notion-536b29b9648f463fa8c7bd739694cbb1"><img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"></a>
-  <a href="https://norepinephrine.tistory.com"><img src="https://img.shields.io/badge/Tistory-000000?style=flat-square&logo=tistory&logoColor=white" /></a>
-  <a href="https://gitlab.com/yoobinkim541"><img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white" /></a>
-  <a href="mailto:yoobinkim06@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
+<p align="center">
+  <img src="./assets/header.svg" alt="YOOBIN KIM — Physical AI / Robotics / Embedded Software" width="854" />
 </p>
 
----
-## Interest in Physical AI, Robotics & Embedded Software 
+<p align="center">
+  안녕하세요, <b>어제의 코드에 머물지 않고 매일 진화하는 개발자 김유빈</b>입니다.<br />
+  단순히 문제를 푸는 것에 그치지 않고, CS 지식을 근거로 지속적인 리팩토링을 거치며<br />
+  치열했던 문제 해결 과정을 기록으로 남기는 것을 즐깁니다.
+</p>
 
----
+<p align="center">
+  <a href="https://www.notion.so/Notion-536b29b9648f463fa8c7bd739694cbb1"><img src="https://img.shields.io/badge/Notion-0B1F3A?style=flat-square&logo=notion&logoColor=white" alt="Notion" /></a>
+  <a href="https://norepinephrine.tistory.com"><img src="https://img.shields.io/badge/Tistory-17396A?style=flat-square&logo=tistory&logoColor=white" alt="Tistory" /></a>
+  <a href="https://gitlab.com/yoobinkim541"><img src="https://img.shields.io/badge/GitLab-1D5FC2?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab" /></a>
+  <a href="mailto:yoobinkim06@gmail.com"><img src="https://img.shields.io/badge/Email-2F81F7?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-## 🌍 Open Source Contributions
+## Interests
+
+<img src="./assets/robot-arm.svg" alt="2링크 로봇 팔이 무한대 곡선을 따라 그리는 애니메이션" width="193" align="right" />
+
+- Physical AI & Robotics (`ROS 2`, robot-arm control, `RViz` simulation)
+- Embedded Software & Hardware Control (`OpenRGB` device support)
+- Computer Vision (`OpenCV`)
+- LLM Agents & Developer Tooling (`MCP` servers, coding-agent harnesses)
+- Linux & Self-hosting (`GTK4` desktop tools, self-hosted services)
+- Algorithms & Problem Solving (`C++`, Baekjoon)
+
+<br clear="all" />
+
+<br />
+
+![Engineering and coding tools](./assets/engineering-tools.svg)
+
+## Open Source Contributions
 
 GitLab · GitHub 에서 ★100 이상 프로젝트에 병합된 기여가 **자동으로** 이 목록에 반영됩니다.
 
 <!-- CONTRIBUTIONS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Projects-1-8A63D2?style=for-the-badge" alt="projects" />
-  <img src="https://img.shields.io/badge/Merged-1-2EA043?style=for-the-badge" alt="merged" />
+  <img src="https://img.shields.io/badge/Projects-1-1D5FC2?style=for-the-badge" alt="projects" />
+  <img src="https://img.shields.io/badge/Merged-1-2F81F7?style=for-the-badge" alt="merged" />
   <img src="https://img.shields.io/badge/GitLab-1-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
 </p>
 
 #### <img src="https://cdn.simpleicons.org/gitlab/FC6D26" height="18" align="top" /> [CalcProgrammer1/OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-3.5k-F2C94C?style=flat-square" align="top" />
 
-- 🟣 **Merged** · [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) &nbsp;<sub>`!3705` · 2026-10-05</sub>
+- 🔵 **Merged** · [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) &nbsp;<sub>`!3705` · 2026-10-05</sub>
 
 <p align="right"><sub>🤖 2026-11-21 자동 갱신 · GitLab + GitHub</sub></p>
 <!-- CONTRIBUTIONS:END -->
 
----
-
-## 🛠 Engineering Philosophy
+## Engineering Philosophy
 
 * **Continuous Refactoring:** "코드는 완성되는 것이 아니라 개선되는 것이라 믿습니다. 유한한 제약 속에서 최적의 논리를 찾아냅니다."
 * **Record to Grow:** "휘발되는 고민을 붙잡기 위해 기록합니다. 어떻게 구현했는가보다, 왜 이 방식을 선택했는지에 대한 근거를 남깁니다."
 
----
+## The Proof of Growth
 
-## 💻 Tech Stack
+<div align="center">
+<img src="./assets/github-languages.svg" alt="공개 저장소 기준 언어 사용 비율" width="48%" align="top" />&emsp;<img src="https://streak-stats.demolab.com?user=yoobinkim541&background=0B1F3A&border=1D4A85&stroke=1D4A85&ring=4EA8FF&fire=4EA8FF&currStreakNum=E6F1FF&sideNums=E6F1FF&currStreakLabel=4EA8FF&sideLabels=A8D4FF&dates=8FB3D9&border_radius=14" alt="GitHub Streak" width="48%" align="top" />
+</div>
 
-  <div style="text-align: left;"> 
-        <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=C&logoColor=white">
-        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white">
-        <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white">
-        <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white">
-        <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white">
-        <br/>
-        <img src="https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=white">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white">
-        <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white">
-        <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white">
-    </div>
-
----
-
-## 📈 The Proof of Growth
-
-<p align="left">
-<img src="https://streak-stats.demolab.com?user=yoobinkim541&theme=transparent&hide_border=true" height="130" alt="GitHub Streak" />
+<p align="center">
+  <img src="./profile-3d-contrib/profile-blue.svg" alt="3D 기여 그래프" width="100%" />
 </p>

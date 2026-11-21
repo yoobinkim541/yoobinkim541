@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="340" viewBox="0 0 860 340" fill="none" role="img" aria-label="Most used languages: Python 54.0%, TypeScript 27.1%, HTML 6.6%, Java 5.0%, CSS 3.1%, Vue 1.2%, JavaScript 1.1%, Other 1.9%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f3a"/>
+      <stop offset="1" stop-color="#102f59"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4ea8ff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#4ea8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ea8ff"/>
+      <stop offset="1" stop-color="#4ea8ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="340" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="858" height="338" rx="19" stroke="#2f81f7" stroke-opacity="0.45" stroke-width="2"/>
+  <circle cx="180" cy="170" r="150" fill="url(#glow)"/>
+  <circle cx="180" cy="170" r="108" stroke="#17396a" stroke-width="34"/>
+  <g transform="rotate(-90 180 170)">
+    <circle cx="180" cy="170" r="108" stroke="#4ea8ff" stroke-width="34" stroke-dasharray="364.68 313.90" stroke-dashoffset="0.00"/>
+    <circle cx="180" cy="170" r="108" stroke="#2f81f7" stroke-width="34" stroke-dasharray="181.68 496.90" stroke-dashoffset="-366.68"/>
+    <circle cx="180" cy="170" r="108" stroke="#9fd0ff" stroke-width="34" stroke-dasharray="42.82 635.77" stroke-dashoffset="-550.36"/>
+    <circle cx="180" cy="170" r="108" stroke="#1d5fc2" stroke-width="34" stroke-dasharray="31.74 646.84" stroke-dashoffset="-595.18"/>
+    <circle cx="180" cy="170" r="108" stroke="#62d2ff" stroke-width="34" stroke-dasharray="19.06 659.53" stroke-dashoffset="-628.92"/>
+    <circle cx="180" cy="170" r="108" stroke="#5b7fd6" stroke-width="34" stroke-dasharray="6.16 672.43" stroke-dashoffset="-649.98"/>
+    <circle cx="180" cy="170" r="108" stroke="#c9e4ff" stroke-width="34" stroke-dasharray="5.49 673.09" stroke-dashoffset="-658.13"/>
+    <circle cx="180" cy="170" r="108" stroke="#3a6596" stroke-width="34" stroke-dasharray="10.96 667.62" stroke-dashoffset="-665.62"/>
+  </g>
+  <circle cx="180" cy="170" r="83" stroke="#4ea8ff" stroke-opacity="0.25" stroke-dasharray="2 6"/>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+  <text x="180" y="166" font-size="34" font-weight="700" fill="#e6f1ff" text-anchor="middle">18</text>
+  <text x="180" y="192" font-size="14" fill="#8fb3d9" text-anchor="middle" letter-spacing="1">REPOSITORIES</text>
+  <text x="370" y="62" font-size="28" font-weight="700" fill="#e6f1ff">Most Used Languages</text>
+  <rect x="370" y="78" width="440" height="4" rx="2" fill="url(#rule)"/>
+  <circle cx="377" cy="130" r="7" fill="#4ea8ff"/>
+  <text x="394" y="136" font-size="18" fill="#e6f1ff">Python</text>
+  <text x="582" y="136" font-size="17" fill="#a8d4ff" text-anchor="end">54.0%</text>
+  <circle cx="377" cy="176" r="7" fill="#2f81f7"/>
+  <text x="394" y="182" font-size="18" fill="#e6f1ff">TypeScript</text>
+  <text x="582" y="182" font-size="17" fill="#a8d4ff" text-anchor="end">27.1%</text>
+  <circle cx="377" cy="222" r="7" fill="#9fd0ff"/>
+  <text x="394" y="228" font-size="18" fill="#e6f1ff">HTML</text>
+  <text x="582" y="228" font-size="17" fill="#a8d4ff" text-anchor="end">6.6%</text>
+  <circle cx="377" cy="268" r="7" fill="#1d5fc2"/>
+  <text x="394" y="274" font-size="18" fill="#e6f1ff">Java</text>
+  <text x="582" y="274" font-size="17" fill="#a8d4ff" text-anchor="end">5.0%</text>
+  <circle cx="617" cy="130" r="7" fill="#62d2ff"/>
+  <text x="634" y="136" font-size="18" fill="#e6f1ff">CSS</text>
+  <text x="822" y="136" font-size="17" fill="#a8d4ff" text-anchor="end">3.1%</text>
+  <circle cx="617" cy="176" r="7" fill="#5b7fd6"/>
+  <text x="634" y="182" font-size="18" fill="#e6f1ff">Vue</text>
+  <text x="822" y="182" font-size="17" fill="#a8d4ff" text-anchor="end">1.2%</text>
+  <circle cx="617" cy="222" r="7" fill="#c9e4ff"/>
+  <text x="634" y="228" font-size="18" fill="#e6f1ff">JavaScript</text>
+  <text x="822" y="228" font-size="17" fill="#a8d4ff" text-anchor="end">1.1%</text>
+  <circle cx="617" cy="268" r="7" fill="#3a6596"/>
+  <text x="634" y="274" font-size="18" fill="#e6f1ff">Other</text>
+  <text x="822" y="274" font-size="17" fill="#a8d4ff" text-anchor="end">1.9%</text>
+  <text x="830" y="318" font-size="12" fill="#5f86b3" text-anchor="end">by bytes · public repositories · forks excluded</text>
+  </g>
+</svg>
