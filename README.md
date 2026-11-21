@@ -38,14 +38,14 @@ GitLab · GitHub 에서 ★100 이상 프로젝트에 병합된 기여가 **자�
 
 <!-- CONTRIBUTIONS:START -->
 <p align="center">
-  <img src="https://img.shields.io/badge/Projects-1-8A63D2?style=for-the-badge" alt="projects" />
-  <img src="https://img.shields.io/badge/Merged-1-2EA043?style=for-the-badge" alt="merged" />
+  <img src="https://img.shields.io/badge/Projects-1-1D5FC2?style=for-the-badge" alt="projects" />
+  <img src="https://img.shields.io/badge/Merged-1-2F81F7?style=for-the-badge" alt="merged" />
   <img src="https://img.shields.io/badge/GitLab-1-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
 </p>
 
 #### <img src="https://cdn.simpleicons.org/gitlab/FC6D26" height="18" align="top" /> [CalcProgrammer1/OpenRGB](https://gitlab.com/CalcProgrammer1/OpenRGB) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-3.5k-F2C94C?style=flat-square" align="top" />
 
-- 🟣 **Merged** · [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) &nbsp;<sub>`!3705` · 2026-10-05</sub>
+- 🔵 **Merged** · [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) &nbsp;<sub>`!3705` · 2026-10-05</sub>
 
 <p align="right"><sub>🤖 2026-11-21 자동 갱신 · GitLab + GitHub</sub></p>
 <!-- CONTRIBUTIONS:END -->
