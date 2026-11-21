@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="260" viewBox="0 0 854 260" role="img" aria-labelledby="title desc">
+  <title id="title">YOOBIN KIM</title>
+  <desc id="desc">Physical AI, Robotics, Embedded Software</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1f3a"/>
+      <stop offset="0.6" stop-color="#0f2b52"/>
+      <stop offset="1" stop-color="#14396b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4ea8ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#4ea8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ea8ff"/>
+      <stop offset="1" stop-color="#4ea8ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#7cc4ff" fill-opacity="0.16"/>
+    </pattern>
+    <clipPath id="card"><rect width="854" height="260" rx="20"/></clipPath>
+    <style>
+      .t { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+      .pulse { animation: pulse 3.2s ease-in-out infinite; }
+      .pulse.d1 { animation-delay: 0.8s; }
+      .pulse.d2 { animation-delay: 1.6s; }
+      .pulse.d3 { animation-delay: 2.4s; }
+      .orbit { transform-origin: 690px 130px; animation: spin 40s linear infinite; }
+      @keyframes pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .pulse, .orbit { animation: none; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="854" height="260" fill="url(#bg)"/>
+    <rect width="854" height="260" fill="url(#dots)"/>
+    <circle cx="690" cy="130" r="190" fill="url(#glow)"/>
+
+    <!-- chip with traces -->
+    <g fill="none" stroke="#4ea8ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <g stroke-opacity="0.45">
+        <path d="M640 92 H600 V60 H540"/>
+        <path d="M640 112 H520"/>
+        <path d="M640 148 H588 V196 H530"/>
+        <path d="M640 168 H610 V228"/>
+        <path d="M740 92 H790 V40"/>
+        <path d="M740 130 H854"/>
+        <path d="M740 168 H776 V214 H854"/>
+        <path d="M670 80 V20"/>
+        <path d="M710 80 V48 H760 V0"/>
+        <path d="M690 180 V260"/>
+        <path d="M670 180 V214 H640"/>
+      </g>
+      <rect x="640" y="80" width="100" height="100" rx="12" fill="#0b1f3a" stroke="#7cc4ff" stroke-width="2"/>
+      <rect x="658" y="98" width="64" height="64" rx="6" stroke="#4ea8ff" stroke-opacity="0.7"/>
+      <g stroke="#7cc4ff" stroke-width="2">
+        <path d="M652 80 V72 M668 80 V72 M684 80 V72 M700 80 V72 M716 80 V72 M732 80 V72"/>
+        <path d="M652 180 V188 M668 180 V188 M684 180 V188 M700 180 V188 M716 180 V188 M732 180 V188"/>
+        <path d="M640 92 H632 M640 108 H632 M640 124 H632 M640 140 H632 M640 156 H632 M640 172 H632"/>
+        <path d="M740 92 H748 M740 108 H748 M740 124 H748 M740 140 H748 M740 156 H748 M740 172 H748"/>
+      </g>
+    </g>
+    <g class="orbit" fill="none" stroke="#a8d4ff" stroke-opacity="0.35" stroke-width="1.2">
+      <ellipse cx="690" cy="130" rx="118" ry="118" stroke-dasharray="2 9"/>
+      <circle cx="808" cy="130" r="4" fill="#a8d4ff" fill-opacity="0.9" stroke="none"/>
+    </g>
+    <text class="t" x="690" y="137" text-anchor="middle" font-size="18" font-weight="700" fill="#e6f1ff" letter-spacing="1">AI</text>
+    <g fill="#4ea8ff">
+      <circle class="pulse" cx="540" cy="60" r="4"/>
+      <circle class="pulse d1" cx="520" cy="112" r="4"/>
+      <circle class="pulse d2" cx="530" cy="196" r="4"/>
+      <circle class="pulse d3" cx="790" cy="40" r="4"/>
+      <circle class="pulse d1" cx="610" cy="228" r="4"/>
+      <circle class="pulse d2" cx="640" cy="214" r="4"/>
+    </g>
+
+    <!-- text -->
+    <text class="t" x="56" y="74" font-size="15" font-weight="600" fill="#7cc4ff" letter-spacing="3">HELLO, I'M</text>
+    <text class="t" x="54" y="132" font-size="58" font-weight="800" fill="#e6f1ff" letter-spacing="1">YOOBIN KIM</text>
+    <rect x="56" y="150" width="300" height="3" rx="1.5" fill="url(#rule)"/>
+    <text class="t" x="56" y="186" font-size="20" font-weight="600" fill="#a8d4ff">
+      Physical AI<tspan fill="#4ea8ff" dx="10" dy="0">/</tspan><tspan dx="10">Robotics</tspan><tspan fill="#4ea8ff" dx="10">/</tspan><tspan dx="10">Embedded Software</tspan>
+    </text>
+    <text class="t" x="56" y="220" font-size="14" fill="#8fb3d9" letter-spacing="0.4">SeoulTech CS&amp;E · Today's me differs from yesterday's me.</text>
+  </g>
+  <rect x="0.75" y="0.75" width="852.5" height="258.5" rx="19.5" fill="none" stroke="#2f81f7" stroke-opacity="0.45" stroke-width="1.5"/>
+</svg>

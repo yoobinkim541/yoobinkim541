@@ -76,8 +76,8 @@ if (!items.length) {
   md += `_아직 ★${MIN_STARS} 이상 프로젝트에 병합된 기여가 없습니다. 곧 채워질 예정입니다!_${NL}`;
 } else {
   md += `<p align="center">${NL}`;
-  md += `  <img src="${shield("Projects", byRepo.size, "8A63D2")}" alt="projects" />${NL}`;
-  md += `  <img src="${shield("Merged", items.length, "2EA043")}" alt="merged" />${NL}`;
+  md += `  <img src="${shield("Projects", byRepo.size, "1D5FC2")}" alt="projects" />${NL}`;
+  md += `  <img src="${shield("Merged", items.length, "2F81F7")}" alt="merged" />${NL}`;
   for (const h of ["GitLab", "GitHub"])
     if (count(h)) md += `  <img src="${shield(h, count(h), HOST[h].color, HOST[h].logo)}" alt="${h}" />${NL}`;
   md += `</p>${NL}${NL}`;
@@ -87,7 +87,7 @@ if (!items.length) {
     const iconColor = h.color === "181717" ? "8b949e" : h.color;
     md += `#### <img src="https://cdn.simpleicons.org/${h.logo}/${iconColor}" height="18" align="top" /> [${f.repo}](${f.url}) &nbsp;<img src="https://img.shields.io/badge/%E2%98%85-${star(f.stars)}-F2C94C?style=flat-square" align="top" />${NL}${NL}`;
     for (const i of list)
-      md += `- 🟣 **Merged** · [${esc(i.title)}](${i.link}) &nbsp;<sub>\`${i.ref}\` · ${i.date.slice(0, 10)}</sub>${NL}`;
+      md += `- 🔵 **Merged** · [${esc(i.title)}](${i.link}) &nbsp;<sub>\`${i.ref}\` · ${i.date.slice(0, 10)}</sub>${NL}`;
     md += NL;
   }
 }
