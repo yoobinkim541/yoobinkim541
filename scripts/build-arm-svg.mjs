@@ -46,7 +46,8 @@ const q1 = unwrap(angles.map((a) => a[0]));
 const q2 = unwrap(angles.map((a) => a[1]));
 
 const r = (v) => Math.round(v * 100) / 100;
-const times = [...pts.map((_, k) => r((k / N) * DRAW)), 1].join(";");
+// keyTimes step is DRAW / N ≈ 0.005, so 2-decimal rounding would collapse neighbours.
+const times = [...pts.map((_, k) => Math.round((k / N) * DRAW * 1e4) / 1e4), 1].join(";");
 const rot = (qs, cx, cy) => [...qs, qs.at(-1)].map((q) => `${r(q)} ${cx} ${cy}`).join(";");
 const path = `M${pts.map((p) => `${r(p.x)} ${r(p.y)}`).join(" L")}`;
 const len = Math.ceil(total);
