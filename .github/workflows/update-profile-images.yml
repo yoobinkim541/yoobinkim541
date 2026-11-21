@@ -7,7 +7,7 @@ on:
     paths:
       - config/profile-3d.json
       - scripts/update-languages.mjs
-      - scripts/recolor-3d-pie.mjs
+      - scripts/theme-3d-contrib.mjs
       - .github/workflows/update-profile-images.yml
 permissions:
   contents: write
@@ -27,8 +27,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 22
-      - name: Blue language pie
-        run: node scripts/recolor-3d-pie.mjs profile-3d-contrib/profile-blue.svg
+      - name: Theme 3D graph
+        run: node scripts/theme-3d-contrib.mjs profile-3d-contrib/profile-blue.svg
       - name: Languages card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
