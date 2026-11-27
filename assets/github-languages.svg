@@ -18,18 +18,18 @@
   <circle cx="180" cy="170" r="150" fill="url(#glow)"/>
   <circle cx="180" cy="170" r="108" stroke="#17396a" stroke-width="34"/>
   <g transform="rotate(-90 180 170)">
-    <circle cx="180" cy="170" r="108" stroke="#4ea8ff" stroke-width="34" stroke-dasharray="367.64 310.95" stroke-dashoffset="0.00"/>
-    <circle cx="180" cy="170" r="108" stroke="#2f81f7" stroke-width="34" stroke-dasharray="138.01 540.57" stroke-dashoffset="-369.64"/>
-    <circle cx="180" cy="170" r="108" stroke="#9fd0ff" stroke-width="34" stroke-dasharray="59.70 618.88" stroke-dashoffset="-509.65"/>
-    <circle cx="180" cy="170" r="108" stroke="#1d5fc2" stroke-width="34" stroke-dasharray="44.23 634.36" stroke-dashoffset="-571.35"/>
-    <circle cx="180" cy="170" r="108" stroke="#62d2ff" stroke-width="34" stroke-dasharray="24.65 653.93" stroke-dashoffset="-617.57"/>
-    <circle cx="180" cy="170" r="108" stroke="#5b7fd6" stroke-width="34" stroke-dasharray="12.06 666.53" stroke-dashoffset="-644.23"/>
-    <circle cx="180" cy="170" r="108" stroke="#c9e4ff" stroke-width="34" stroke-dasharray="6.06 672.52" stroke-dashoffset="-658.29"/>
+    <circle cx="180" cy="170" r="108" stroke="#4ea8ff" stroke-width="34" stroke-dasharray="367.62 310.96" stroke-dashoffset="0.00"/>
+    <circle cx="180" cy="170" r="108" stroke="#2f81f7" stroke-width="34" stroke-dasharray="137.97 540.62" stroke-dashoffset="-369.62"/>
+    <circle cx="180" cy="170" r="108" stroke="#9fd0ff" stroke-width="34" stroke-dasharray="59.68 618.90" stroke-dashoffset="-509.59"/>
+    <circle cx="180" cy="170" r="108" stroke="#1d5fc2" stroke-width="34" stroke-dasharray="44.24 634.35" stroke-dashoffset="-571.27"/>
+    <circle cx="180" cy="170" r="108" stroke="#62d2ff" stroke-width="34" stroke-dasharray="24.72 653.86" stroke-dashoffset="-617.51"/>
+    <circle cx="180" cy="170" r="108" stroke="#5b7fd6" stroke-width="34" stroke-dasharray="12.05 666.53" stroke-dashoffset="-644.23"/>
+    <circle cx="180" cy="170" r="108" stroke="#c9e4ff" stroke-width="34" stroke-dasharray="6.06 672.53" stroke-dashoffset="-658.29"/>
     <circle cx="180" cy="170" r="108" stroke="#3a6596" stroke-width="34" stroke-dasharray="10.24 668.34" stroke-dashoffset="-666.34"/>
   </g>
   <circle cx="180" cy="170" r="83" stroke="#4ea8ff" stroke-opacity="0.25" stroke-dasharray="2 6"/>
   <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
-  <text x="180" y="166" font-size="34" font-weight="700" fill="#e6f1ff" text-anchor="middle">18</text>
+  <text x="180" y="166" font-size="34" font-weight="700" fill="#e6f1ff" text-anchor="middle">19</text>
   <text x="180" y="192" font-size="14" fill="#8fb3d9" text-anchor="middle" letter-spacing="1">REPOSITORIES</text>
   <text x="370" y="62" font-size="28" font-weight="700" fill="#e6f1ff">Most Used Languages</text>
   <rect x="370" y="78" width="440" height="4" rx="2" fill="url(#rule)"/>
