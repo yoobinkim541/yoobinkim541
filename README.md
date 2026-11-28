@@ -47,7 +47,7 @@ GitLab · GitHub 에서 ★100 이상 프로젝트에 병합된 기여가 **자�
 
 - 🔵 **Merged** · [Add Colorful iGame RTX 5080 Ultra W OC support](https://gitlab.com/CalcProgrammer1/OpenRGB/-/merge_requests/3705) &nbsp;<sub>`!3705` · 2026-10-05</sub>
 
-<p align="right"><sub>🤖 2026-11-27 자동 갱신 · GitLab + GitHub</sub></p>
+<p align="right"><sub>🤖 2026-11-28 자동 갱신 · GitLab + GitHub</sub></p>
 <!-- CONTRIBUTIONS:END -->
 
 ## The Proof of Growth
